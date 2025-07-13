@@ -1,0 +1,16 @@
+version: "3.9"
+services: 
+  blog:
+    image: postgres:17
+    container_name: blog_db
+    environment:
+      POSTGRES_USER: alex01
+      POSTGRES_PASSWORD: pwd1234
+      POSTGRES_DB: blog_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - blog_data:/var/lib/postgresql/blog_data
+    restart: unless-stopped
+volumes:
+  blog_data:
