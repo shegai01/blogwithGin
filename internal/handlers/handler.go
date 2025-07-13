@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/blog/internal/config"
 	"github.com/gin-gonic/gin"
+	"github.com/shegai01/blogwithGin/internal/config"
 )
 
 const (

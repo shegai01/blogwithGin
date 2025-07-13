@@ -1,4 +1,4 @@
-module github.com/blog
+module github.com/shegai01/blogwithGin
 
 go 1.24.4
 
